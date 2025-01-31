@@ -1,13 +1,13 @@
 pipeline {
     agent any
    tools {
-        maven 'mymaven'  // Name of the configured tool
+        maven 'MyName'  // Name of the configured tool
     }
  
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'main', url: 'https://github.com/prasadyoaspire/springboot-pipeline.git'
+               git branch: 'main', url: 'https://github.com/Rajratnakalasare/wipromart.git'
             }
         }
         stage('Build') {
